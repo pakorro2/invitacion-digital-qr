@@ -1,0 +1,31 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Invitacion Digital QR - Prueba Full-Stack Nextia ",
+    "description": "Caracteristica de un producto para que los usuarios puedan generar invitaciones digitales para sus invitados en forma de un código QR, mismo que podrán compartir a sus invitados para acelerar el proceso de entrada a su residencial.",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:9000/api/v1"
+    }
+  ],
+  "paths": {
+    "/users": {
+      "get": {
+        "summary": "Retorna una lista de Usuarios",
+        "responses": {
+          "200": {
+            "description": "Lista de usuarios"
+          },
+          "400": {
+            "description": "Error de sequelize"
+          }
+        }
+      },
+      "post": {
+        "summary": "Crea un nuevo usuario"
+      }
+    }
+  }
+}
