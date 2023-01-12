@@ -35,8 +35,7 @@ const Users = db.define('users', {
   },
   apartmentNumber: {
     type: DataTypes.STRING,
-    allowNull: false,
-    unique: true //Quitar si se desea que mas de uno inquilino por departamento tenga cuenta.
+    allowNull: false
   },
   role: {
     type: DataTypes.STRING,
