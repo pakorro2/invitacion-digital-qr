@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "http://localhost:9000/api/v1"
+      "url": "https://api-invitation-qr.pakodev.site/api/v1"
     }
   ],
   "paths": {
