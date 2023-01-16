@@ -6,7 +6,8 @@ module.exports = {
     host: process.env.HOST,
     jwtSecret: process.env.JWT_SECRET,
     emailPass: process.env.MAIL_PASS,
-    email: process.env.MAIL
+    email: process.env.MAIL,
+    hostFront: process.env.HOST_FRONT
   },
   db: {
     host: process.env.DB_HOST,

@@ -1,4 +1,5 @@
 const Invitations = require('../models/invitations.models')
+const Users = require('../models/users.models')
 
 const uuid = require('uuid')
 
@@ -6,10 +7,12 @@ const findAllInvitations = async (id) => {
   const data = await Invitations.findAll({
     where: {
       userId: id
-    },
-    attributes: {
+    }, include: {
+      model: Users,
+      attributes: ['firstName']
+    }, attributes: {
       exclude: ['createdAt', 'updatedAt']
-    },
+    }
   })
   return data
 }
@@ -21,7 +24,7 @@ const findInvitationById = async (id) => {
     },
     attributes: {
       exclude: ['createdAt', 'updatedAt']
-    },
+    }
   })
   return data
 }
