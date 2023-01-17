@@ -9,7 +9,7 @@ const Login = () => {
   const navigate = useNavigate()
 
   const submit = data => {
-    const URL = 'http://localhost:9000/api/v1/auth/login'
+    const URL = 'https://api-invitation-qr.pakodev.site/api/v1/auth/login'
     axios.post(URL, data)
       .then(res => {
         localStorage.setItem('token', res.data.token)

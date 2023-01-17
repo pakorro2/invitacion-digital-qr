@@ -10,7 +10,7 @@ const RecoveryPassword = () => {
   const { handleSubmit, register, reset } = useForm()
 
   const submit = data => {
-    const URL = 'http://localhost:9000/api/v1/auth/recovery-password'
+    const URL = 'https://api-invitation-qr.pakodev.site/api/v1/auth/recovery-password'
     axios.post(URL, data)
       .then(res => {
         alert(res.data.message)

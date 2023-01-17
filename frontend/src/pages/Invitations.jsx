@@ -14,7 +14,7 @@ const Invitations = () => {
   const [invitations, setInvitations] = useState(null);
 
   const getInvitations = () => {
-    const URL = `http://localhost:9000/api/v1/invitations`
+    const URL = `https://api-invitation-qr.pakodev.site/api/v1/invitations`
     axios.get(URL, getConfig())
       .then(res => {
         setInvitations(res.data)
@@ -27,7 +27,7 @@ const Invitations = () => {
   }, [])
 
   const deleteInvitations = (id) => {
-    const URL = `http://localhost:9000/api/v1/invitations/${id}`
+    const URL = `https://api-invitation-qr.pakodev.site/api/v1/invitations/${id}`
     axios.delete(URL, getConfig())
       .then(res => {
         console.log(res.data)

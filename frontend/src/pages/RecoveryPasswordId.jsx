@@ -9,7 +9,7 @@ const RecoveryPasswordId = () => {
 
   const { id } = useParams()
   const submit = data => {
-    const URL = `http://localhost:9000/api/v1/auth/recovery-password/${id}`
+    const URL = `https://api-invitation-qr.pakodev.site/api/v1/auth/recovery-password/${id}`
     axios.patch(URL, data)
       .then(res => {
         alert('Your password was successfully changed.')
