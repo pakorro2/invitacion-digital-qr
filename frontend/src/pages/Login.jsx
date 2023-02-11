@@ -31,6 +31,11 @@ const Login = () => {
     >
       <img style={{ width: '100%', maxWidth: '80px' }} src="https://cdn-icons-png.flaticon.com/512/2943/2943270.png" alt="Mensaje enviado" />
       <h2>Login</h2>
+      <p><b>Use demo user:</b></p>
+      <div style={{ width: '250px', textAline: 'left' }}>
+        <p><b>Email:</b> pakorro222@gmail.com</p>
+        <p><b>password:</b> 12346</p>
+      </div>
       <TextField
         id="email"
         label="Email"
